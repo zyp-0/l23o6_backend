@@ -1,0 +1,41 @@
+
+
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/l23o6
+    username: postgres
+    password: 123456
+
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+
+sa-token:
+#   token-name: token
+#   # 30 days
+#   timeout: 2592000
+#   # no expiration
+#   activity-timeout: -1
+#   # multi login
+#   is-concurrent: true
+#   is-share: true
+  token-style: uuid
+  is-log: true
+
+alipay:
+  appId: 9021000123601512
+  appPrivateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxC+4rmwm+nsIzMJpqFxw5ioa10ldi+QXMuho26NcIVNMZOxnC7O2f9KbokvkFT9Ll5j8ZUHyvUGDUKT9XqvFYghf695Ktm8H56nocOfI7gLl13I4xYFDmQPvHiEp+IjxD+lyU6misgvQbBTeX5SW7G0znVx65NeEwOvnUXlI69dgqgistjQjhNs6fxSkBZJzmi/JMgWxRZdgdaFY4Rrk5/a7gGsdcOzrnPt94gI0O048Q359R2srGSN1oAw1YJmiM81Y5SvIcrtKx6mX3wzlepvPJdcdv02H8vCFK8R0/L5wf0CW1kpJ/m+jsTydRD6OZuS79Tle1oQr8SUve1B/7AgMBAAECggEBAI9kQT7x75+Ch3jcOYQJOaPk7Rvfw0T2uVrJs6ebR2WJBfweYMv+BqsRhAlD2AoUT5RBugMvq/x1libfTV0cpyHvI6rwzsxrJVzbKpEn4WeN5ydtPYECKCOEqCc/3E1yPuszn75AaAyodzpXLGKKhdeX0d5gMhMBb2QXr/Xvepwi2xlYw7koaV5zbi6FI/c1CbYd7uuHRcxWV2IYwvqfIKXV6MKF8OyjcPqIAGvmBBGYT2L4CoC4D8q3l+h3PL66ULK4/6fU3I5YC3QO8o841laKX5PHN1Pvbt/MpTJJJ006xT+Eapp/B26SqYDR8yIL4PM6tGXSyE6iDQH80FINEOkCgYEA9DE9Lecw1e7CfSezmvTsc9DL3LrCKj1+D1hfGiOoTytY9YqIEbW7txeWmB98jQN2V4juG4Acr/a8TSoIA+/YmazsWB7lLvGk+JC6MXjtMPvI40Reky6wqHnqssGYJwwfvhk+PkWdU6sVBIvVFd4iN2MVm4Ms1PHWUE/Z5srD1O8CgYEAuZuFS0hMYIUwthFAFHu7K/B+jw27JHxXi02h4xgnTxtAvsDUEZajaNTY08ZP9S9T0SWkz/6zKyR5tRM4HTwmKnMAAwrtes7DD6F0PD2JGmwiQaB+9LrfxwsQuVnpX7wHriukISyD0sNdwaEwjSitY0Qo1SFJGigh+Cb0ZHO4nbUCgYEAvVOf14M0PeoMKPUrL61N1s3AAbda610Z69PciGu1BwzYwCdUMEby75X+UJu4+awBiQTFd9TwaQ2oGTvJUyQWj6+e3wO1NZxtB7tOYSUc4amVq39KxFqi5T0BVu76hOvFgKIZvDZFMKWoegnggD/lz4OnMReXHtMSEtqWW3ZCN0kCgYB1VjsbD5axQiI8R4WCLYJzUbNAjoarlyvk9ewM290l5m206cRnZhriEAUPRISR1Ryg0LJzh2oPMRz7+y1zVe4u0crFIahmBcZM4F3SI3jESm4RnPwFjQohE/67nnqpuf4E/rPhAPpJSJbB7Tv7USbj5VgG/Obw8UQgU8gWpQ2mLQKBgDFRgya1OcUJzjA2sj+vxxFYYSif9UOlnvz7ZOg3fwY51xpcuDhT0BNvzhTAl9BQUHgABJv3qbnldpjombfg6WR3EBsnLvkBw/Jzfg3doddOySbsKnm+h597uJF46xQ8iVPKxGBmhna6UCmN6f5qWc4JkUBCcnYgjJBL6tisHx1L
+  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAij4kWSo2VfZDOEpgffryBO36SVAkxEF0Z3ErOJe2FfmhcaTKQ2ud09uNVibgRo5/GWwMbPho+0Oadq95JrLenPT1k/9mX+gL2S9Hkci/o7N10vnuJm7kBIvwYakq6ztBvr9VtbCW8yBkVL/YYXy+LyFvBrEOxwK7CG+Z+rIedNCJhac+qn2iPTFQSiSfOAGhZFkp2dj/tL48PneP3Y5V2vprHf7lNvQn+YhololQSLt5UhagM4JFNqy/GOQz1bSnrNNfqceWTgXhga869GQPYtzn2TcdRE+5t2lxjQor7vwrR+xybqPsQpJl2TXzztLgsE+juI2uYfUkJjgApXMeKQIDAQAB
+  notifyUrl: http://egmekq.natappfree.cc/alipay/notify
+  gatewayUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+  signType: RSA2
+  format: json
+  charset: UTF-8
+
